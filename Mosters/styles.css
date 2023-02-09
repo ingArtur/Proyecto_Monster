@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Press+Start+2P&display=swap');
+
+body {   
+font-family: 'Press Start 2P', cursive;
+    background-image: linear-gradient(black, grey, white );
+}
+
+#seleccionar-Monsters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.titulo { 
+    color: white;
+    font-size: 36px;
+    font-family: 'Alfa Slab One', cursive;
+}
+ 
+.subtitulo { 
+    color: white;
+    font-size: 28px;
+
+}
+    .tarjetas, .tarjetas-ataques {
+        display: flex;
+        gap: 10px;
+    }
+
+.tarjeta-de-monsters {
+    width: 200px;
+    height: 190px;
+    background: #F7EA08;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color:beige;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjeta-de-monsters img{
+    width: 85px;
+}
+
+#boton-monsters {
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    margin-top: 35px;
+}
+
+input{
+     display: none; 
+}
+
+input:checked + label {
+    background-color: blue;
+
+}
+
+input:hover + label {
+    background-color: blue;
+
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: rgb(144, 245, 3) ;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#mensajes {
+    width: 280;
+    background: rgba(117, 4, 123, 0.895);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#boton-reiniciar {
+    border: none;
+    color: blue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.ataques {
+    display:grid;
+    grid-template-columns:150px 150px;
+    text-decoration: underline;
+    color: white;
+
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(41, 181, 224);
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques {
+       flex-direction: column; 
+    }
+}
+
+
+@media (max-width: 300px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+       flex-direction: column; 
+    }
+}
+
+
